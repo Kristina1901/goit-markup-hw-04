@@ -472,7 +472,8 @@ img {
         #FFFFFF 10%,
         #2f303a 90%);
         }
-    .contact-list-button:hover {
+    .contact-list-button:hover,
+    .contact-list-button:focus {
      background-image:linear-gradient(
         to right,
         #ffffff 0%,
