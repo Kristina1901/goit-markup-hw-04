@@ -85,18 +85,15 @@ img {
         letter-spacing: 0.02em;
         color:var(--inactive-color);
         display: block;
-        padding-bottom: 32px;
-        padding-top: 32px;
-    }
-    .menu-item-contacts {
+       }
+     .menu-item-contacts {
         margin-right: 50px;
     }
     .menu-item-picture {
         margin-right: 10px;
         height: 12px;
         width: 16px;
-        fill:red;
-        } 
+       } 
     .menu-item-contacts:last-child {
         margin-right: 0px;
     }
@@ -122,6 +119,18 @@ img {
         padding-top: 24px;
         padding-bottom: 24px;
         margin-right: 93px;
+    }
+    .mail {
+        fill: var(--inactive-color);
+    }
+    .mail:hover {
+        fill: var(--accent-color);
+    }
+    .telephone {
+        fill: var(--inactive-color);  
+    }
+    .telephone:hover{
+        fill: var(--accent-color);
     }
      /*finish of header*/
     .hero {
@@ -293,7 +302,57 @@ img {
         letter-spacing: 0.03em;
         color:var(--inactive-color);
         }
+        .our-team-button {
+            height: 44px;
+            width: 44px;
+            border-radius: 0px;
+            background-color:var(--active-color);
+           }
         /* finish section */
+    .clients {
+        background: #E5E5E5;
+        padding-top:94px;
+        padding-bottom: 94px;
+        }    
+    .clients-header {
+        font-family: Roboto;
+       font-size: 36px;
+       font-style: normal;
+       font-weight: 700;
+       line-height: 42px;
+       letter-spacing: 0.03em;
+       text-align: center;
+       margin-bottom: 50px;
+       color:var(--main-color); 
+    }
+    .clients-list {
+        display: flex;
+        justify-content: center;
+    }
+    .clients-list a {
+        display: block;
+    }
+    .clients-item:hover {
+        border: 1px solid #2196F3;
+    }
+    .clients-item {
+        width: 170px;
+        height: 90px;
+        border: 1px solid #AFB1B8;
+        box-sizing: border-box;
+        border-radius: 4px;
+        margin-right: 30px;
+    }
+    .clients-item:last-child {
+        margin-right: 0;
+    } 
+    .clients-icon {
+        fill: #AFB1B8;
+    }
+    .clients-icon:hover{
+       fill: #2196f3;
+    } 
+    /* finish page */
     .contact-information {
        background:var(--background-dark-color);
        padding-top: 60px;
