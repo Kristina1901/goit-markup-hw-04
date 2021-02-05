@@ -329,6 +329,7 @@ img {
             width: 44px;
             border-radius: 50px;
             background-color:var(--active-color);
+            outline: 0 !important;
             }
         .our-team-button:hover,
         .our-team-button:focus {
@@ -339,7 +340,7 @@ img {
             height: 44px;
             width: 44px;
             margin-right: 10px
-        }  
+           }  
         .our-team-list:last-child {
             margin-right: 0;
         } 
@@ -471,6 +472,7 @@ img {
          to right,
         #FFFFFF 10%,
         #2f303a 90%);
+        outline: 0 !important;
         }
     .contact-list-button:hover,
     .contact-list-button:focus {
