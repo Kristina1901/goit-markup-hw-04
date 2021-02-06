@@ -2,6 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  outline: 0;
 }
 img {
     display: block;
@@ -91,19 +92,14 @@ img {
     }   
      .menu-item-contacts {
         margin-right: 50px;
-    }
-    .menu-item-picture {
-        margin-right: 10px;
+       }
+    .link-header {
+        width: 171px;
         height: 16px;
-        width: 16px;
-       } 
+        }    
     .menu-item-contacts:last-child {
         margin-right: 0px;
     }
-    .tel-mail-title a:hover,
-    .tel-mail-title a:focus{
-        color:var(--accent-color)
-    } 
     header > .container {
         display: flex;
         justify-content: space-between;
@@ -124,20 +120,28 @@ img {
         margin-right: 93px;
     }
     .mail {
-        fill: var(--inactive-color);
-        height: 16px;
+        height: 10px;
         width: 16px;
-    }
-    .mail:hover {
-        fill: var(--accent-color);
-    }
-    .telephone {
-        fill: var(--inactive-color);  
+        fill: var(--inactive-color);
+        margin-right: 10px;
+        }
+     .telephone {
         width: 10px;
         height: 16px;
-    }
-    .telephone:hover {
+        fill: var(--inactive-color);
+        margin-right: 10px;
+       }
+    .link-header:focus .mail,
+    .link-header:hover .mail {
         fill: var(--accent-color);
+        }
+    .link-header:focus .telephone,
+    .link-header:hover .telephone {
+            fill: var(--accent-color);
+        }    
+    .link-header:focus,
+    .link-header:hover {
+        color: var(--accent-color);
     }
      /*finish of header*/
     .hero {
@@ -198,7 +202,7 @@ img {
         color:var(--inactive-color);
         width: 270px;
         margin-right: 30px;
-       }
+        }
     .advantages-item:last-child {
         margin-right: 0px;
     } 
@@ -208,7 +212,20 @@ img {
         border-radius: 4px;
         background: #F5F4FA;
         margin-bottom: 30px;
-       }
+        height: 120px;
+        width: 270px;
+        border-radius: 4px;
+        height: 120px;
+        width: 270px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+    .advantages-icons {
+        width: 66px;
+        height: 70px;
+      }
+
     .advantages-header {
         font-family: Roboto;
         font-size: 14px;
@@ -274,20 +291,23 @@ img {
         justify-content: center;
         height: 44px;
         width: 206px;
-        }
+       }
     .our-team-icon {
-        fill: var(--inactive-color);
-        width: 44px;
-        height: 44px;
-    }
-    .our-team-icon:hover{
-        fill:var(--active-color);
+        fill: #AFB1B8;
+        width: 20px;
+        height: 20px;
     }
     .our-team-button {
         background-color: var(--active-color);
         border: 0;
-        }
-    .name-container {
+        display: flex;
+        height: 44px;
+        width: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+     .name-container {
        padding: 30px;
       }
     .name-container > img {
@@ -344,9 +364,13 @@ img {
         .our-team-list:last-child {
             margin-right: 0;
         } 
+        .our-team-button:focus .our-team-icon,
+        .our-team-button:hover .our-team-icon {
+                fill: var(--active-color);
+            }   
         /* finish section */
     .clients {
-        background: #E5E5E5;
+        background: var(--active-color);
         padding-top:94px;
         padding-bottom: 94px;
         }    
@@ -365,20 +389,59 @@ img {
         display: flex;
         justify-content: center;
     }
-    .clients-list a {
+    .clients-link {
         display: block;
+        height: 90px;
+        width: 170px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
     }
-    .clients-item:hover {
-        border: 1px solid #2196F3;
+    .clients-link:focus,
+    .clients-link:hover{
+        border: 1px solid var(--accent-color);
     }
-    .clients-item {
+    .clients-link:focus .current,
+    .clients-link:hover .current {
+            fill: var(--accent-color);
+        }    
+     .clients-icon-a {
+        width: 45px; 
+        height: 44px;
+        fill: #AFB1B8;
+    }
+    .clients-icon-b {
+        width: 40px; 
+        height: 52px;
+        fill: #AFB1B8;
+    }
+    .clients-icon-c {
+        width: 42px; 
+        height: 42px;
+        fill: #AFB1B8;
+    }
+    .clients-icon-d {
+        width: 80px; 
+        height: 42px;
+        fill: #AFB1B8;
+    }
+    .clients-icon-e {
+        width: 59px; 
+        height: 47px;
+        fill: #AFB1B8;
+    }
+    .clients-icon-f {
+        width: 88px; 
+        height: 66px;
+        fill: #AFB1B8;
+    }
+     .clients-item {
         width: 170px;
         height: 90px;
-        border: 1px solid #AFB1B8;
-        box-sizing: border-box;
-        border-radius: 4px;
         margin-right: 30px;
-    }
+        }
     .clients-item:last-child {
         margin-right: 0;
     } 
@@ -468,23 +531,20 @@ img {
         border-radius: 50%;
         height: 44px;
         width: 44px;
-        background-image: linear-gradient(
-         to right,
-        #FFFFFF 10%,
-        #2f303a 90%);
-        outline: 0 !important;
+        background-color:rgba(255, 255, 255, 0.1); 
+        display: block; 
+        justify-content: center;   
+        align-content: center;  
+        border: 0;
+        cursor: pointer;
         }
     .contact-list-button:hover,
     .contact-list-button:focus {
-     background-image:linear-gradient(
-        to right,
-        #ffffff 0%,
-        #2196f3 100%);
-        cursor: pointer;
-    }   
+     background-color: var(--accent-color);
+    }    
      .contact-icons-footer {
-         height: 44px;
-         width: 44px;
+         height: 20px;
+         width: 20px;
      } 
     .container-icons {
         margin-left: 70px;
@@ -532,12 +592,15 @@ img {
            padding-bottom: 6px;
            border-radius: 4px;
            border: 0px;
+           border-radius: 4px;
+           box-shadow: 0;
     }
     .button-portfolio:hover,
     .button-portfolio:focus {
             background-color:var(--accent-color);
             color: var(--active-color);
             cursor: pointer;
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     }
     /* finish section */
     .portfolio-photo {
@@ -563,10 +626,8 @@ img {
        border: 1px solid #EEEEEE;
        width: 370px;
        padding-bottom: 20px;
+       height: 404px;
   }
-    .portfolio-gallery:hover {
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    }
     .portfolio-header {
             font-family: Roboto;
             font-weight: bold;
@@ -585,6 +646,15 @@ img {
             text-decoration: none;
             display: block;
         }
+    .portfolio-link {
+        box-shadow: 0;
+        width: 370px;
+        height: 404px;
+    } 
+    .portfolio-link:hover,
+    .portfolio-link:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }   
     .portfolio-gallery-container {
         padding-right: 24px;
         padding-left: 24px;
