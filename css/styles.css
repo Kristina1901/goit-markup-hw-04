@@ -2,7 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  outline: 0;
+
 }
 img {
     display: block;
@@ -41,8 +41,6 @@ img {
     }
 .menu-item {
     display: flex;
-    padding-bottom: 32px;    
-    padding-top: 32px;    
     margin-right: 50px;
     }    
 .menu-list:last-child {
@@ -55,6 +53,8 @@ img {
         line-height: 1.14;
         letter-spacing: 0.02em;
         color:var(--main-color);
+        padding-bottom: 32px;    
+        padding-top: 32px;  
         }
    .link:hover, 
    .link:focus {
@@ -85,10 +85,15 @@ img {
         line-height: 1.14;
         letter-spacing: 0.02em;
         color:var(--inactive-color);
-        display: block;
+        display: flex;
+        align-items: center;
+        padding-bottom: 32px;    
+        padding-top: 32px;  
        }
     .tel-mail-title {
         height: 16px;
+        display: flex;
+        align-items: center;
     }   
      .menu-item-contacts {
         margin-right: 50px;
@@ -349,7 +354,6 @@ img {
             width: 44px;
             border-radius: 50px;
             background-color:var(--active-color);
-            outline: 0 !important;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -468,8 +472,8 @@ img {
         padding-left: 15px;
         margin-right:  auto;
         margin-left: auto;
-        height: auto; 
         display: flex; 
+        align-items: baseline;
       }
     .logo-studio-white {
         color:var(--active-color);
@@ -630,7 +634,7 @@ img {
        width: 370px;
        padding-bottom: 20px;
        height: 404px;
-  }
+      }
     .portfolio-header {
             font-family: Roboto;
             font-weight: bold;
@@ -648,7 +652,7 @@ img {
             color:var(--inactive-color);
             text-decoration: none;
             display: block;
-        }
+           }
     .portfolio-link {
         box-shadow: 0;
         width: 370px;
@@ -659,8 +663,10 @@ img {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }   
     .portfolio-gallery-container {
-        padding-right: 24px;
-        padding-left: 24px;
+      padding-right: 24px; 
+      padding-left: 24px;
+      padding-top: 20px;
+      padding-bottom: 20px;
     }    
     .link-logo {
         text-decoration: none;
