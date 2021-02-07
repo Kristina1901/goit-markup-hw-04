@@ -344,19 +344,22 @@ img {
         color:var(--inactive-color);
         margin-bottom: 16px;
         }
-        .our-team-button {
+        .our-team-link {
             height: 44px;
             width: 44px;
             border-radius: 50px;
             background-color:var(--active-color);
             outline: 0 !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             }
-        .our-team-button:hover,
-        .our-team-button:focus {
+        .our-team-link:hover,
+        .our-team-link:focus {
             background-color: var(--accent-color);
             cursor: pointer;
         } 
-        .our-team-button-list {
+        .our-team-link-list {
             height: 44px;
             width: 44px;
             margin-right: 10px
@@ -364,8 +367,8 @@ img {
         .our-team-list:last-child {
             margin-right: 0;
         } 
-        .our-team-button:focus .our-team-icon,
-        .our-team-button:hover .our-team-icon {
+        .our-team-link:focus .our-team-icon,
+        .our-team-link:hover .our-team-icon {
                 fill: var(--active-color);
             }   
         /* finish section */
@@ -527,19 +530,19 @@ img {
     .contact-icons:last-child {
         margin-right: 0;
     } 
-    .contact-list-button {
+    .contact-list-link {
         border-radius: 50%;
         height: 44px;
         width: 44px;
         background-color:rgba(255, 255, 255, 0.1); 
-        display: block; 
+        display:flex; 
         justify-content: center;   
-        align-content: center;  
+        align-items: center;  
         border: 0;
         cursor: pointer;
         }
-    .contact-list-button:hover,
-    .contact-list-button:focus {
+    .contact-list-link:hover,
+    .contact-list-link:focus {
      background-color: var(--accent-color);
     }    
      .contact-icons-footer {
